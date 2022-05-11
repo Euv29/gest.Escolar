@@ -7,44 +7,47 @@
      <link rel="stylesheet" href="css/formStyle.css">
      <!--           Background Animation                -->
      <!--<link rel="stylesheet" href="css/backanimation.css">-->
-     <title>Login</title>
+     <title>Registration</title>
 </head>
 <body>
      <main>
           <section>
                <!--      <img src="img/logo.png" alt="cepph-logo">     -->
-               <h1>BEM - VINDO</h1>
+               <h1>SOLICITAÇÃO DE CONTA</h1>
           </section>
           <section class="form-login">
                <form action="" id="form">
                     <div class="input-block">
 
+                         <div class="control"> 
+                              <div>
+                                   <img src="img/person_white_24dp.svg" alt="">
+                                   <input type="text" id="username" placeholder="Número de Matrícula" aria-label="Achjc">
+                                   <i><img class="img-success" src="img/icons/success-svgrepo-com.svg" alt=""></i>
+                                   <i><img class="img-error" src="img/icons/error-svgrepo-com.svg" alt=""></i>
+                              </div>
+                         </div>                         
+
                          <div class="control">
                               <div>
                                    <img src="img/person_white_24dp.svg" alt="">
-                                   <input type="text" id="username" placeholder="Nome de Usuario">
+                                   <input type="text" id="username" placeholder="Número do B.I" aria-label="Achjc">
                                    <i><img class="img-success" src="img/icons/success-svgrepo-com.svg" alt=""></i>
                                    <i><img class="img-error" src="img/icons/error-svgrepo-com.svg" alt=""></i>
                               </div>
-                         </div>
-                         
-                         <div class="control">
-                              <div>
-                                   <img src="img/lock_white_24dp.svg" alt="">
-                                   <input type="password" id="userpassword" placeholder="Palavra-Passe">
-                                   <i><img class="img-success" src="img/icons/success-svgrepo-com.svg" alt=""></i>
-                                   <i><img class="img-error" src="img/icons/error-svgrepo-com.svg" alt=""></i>
-                              </div>
-                         </div>
-
+                         </div>                         
                     </div>
-                    <button type="Submit" class="btn-login">ENTRAR</button>
+
+                    <button type="Submit" class="btn-login">ENVIAR</button>
                </form>
           </section>
           <section>
                <h5>
-                    <p class="m-b-0 m-t"> Esqueceu sua palavra-passe? <a href="#">Redefinir</a></p>
-                    <p class="m-b-0 m-t">Não tem uma conta? <a href="Registration.html">Solicitar conta</a></p>
+                    <p class="m-b-0 m-t">
+                         Para obtenção dos dados de acesso <br>
+                         contacte a direcção da instituição.
+                    </p>
+                    <p class="m-b-0 m-t">Já tem uma conta? <a href="Login.html">Entrar</a></p>
                </h5>
           </section>
           <script src="js/validation.js"></script>

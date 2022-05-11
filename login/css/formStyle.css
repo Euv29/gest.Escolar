@@ -1,22 +1,21 @@
 *{
+     padding: 0;
      box-sizing: border-box;
      font-family: 'Open Sans', sans-serif;
 }
 
 html,body{
-     height: 100vh;
+     height: 92vh;
 }
 
-
-
 body{
-     background-image: linear-gradient(280deg, 
+     /*background-image: linear-gradient(280deg, 
      rgb(15, 0, 20), 
      rgb(15, 0, 40), 
      rgb(15, 0, 80),
-     rgb(15, 0, 160));
-     /*background-image: url('../img/IMG_6854_FX.png');
-     background-size: cover;*/
+     rgb(15, 0, 160));*/
+     background-image: url('../img/IMG_6855.png');
+     background-size: cover;
      font-family: Arial, sans-serif;
      padding: 150px;
      display: flex;
@@ -27,13 +26,15 @@ body{
 
 body section:nth-child(1){
      height: 30px;
-     color: #ffffff;
+     color: rgb(255, 255, 255);
      position: relative;
-     top: -15px;
-     margin-bottom: 40px;
+     top: -20px;
+     margin-bottom: 10px;
+     margin-top: 20px;
      font-size: 15px;
      padding: 0px;
 } 
+
 
 section img{
      position: relative;
@@ -55,10 +56,10 @@ form .input-block{
      height: 40px;
 }
 
-.input-block div{
-     background-color: rgba(14, 48, 99, 0.453);
-     margin-bottom: 10px;
-     width: 250px;
+.input-block .control div{
+     margin-bottom: 8px;
+     background-color: rgba(18, 56, 112, 0.508);
+     width: 280px;
      height: 45px;
      display: flex;
 }
@@ -70,10 +71,14 @@ input {
      background-color: unset;
      top: 5px;
      left: 5px;
-     width: 200px;
+     width: 237px;
      height: 35px;
      border: none;
      outline: none;
+}
+
+input::placeholder{
+     color: #fff;
 }
 
 /*        Botão ENTER         */
@@ -93,6 +98,58 @@ form .btn-login{
      transition: background-color .5s, color .5s linear, border-radius 2s ease-out;
      outline: none;
 }
+
+p{
+     color: rgb(255, 255, 255);
+}
+
+a{
+     text-decoration: none;
+     color: rgb(0, 6, 170);
+}
+
+body section:nth-child(3), section:nth-child(1){
+     text-align: center;
+     width: 280px;
+}
+
+.control{
+     flex-direction: column;
+}
+
+/*-------------- Validação de conta -----------------*/
+
+.input-block .control i img{
+     width: 30px;
+     height: 30px;
+     left: 15px;
+     top: 5px;
+     visibility: collapse;
+}
+
+.input-block .control i .img-error{
+     left: -15px;
+     top: 5px;
+}
+
+.input-block .control.success{
+     border: 1px solid #1ee242;
+}
+
+.input-block .control.error{
+     border: 1px solid #f02020;
+}
+
+.input-block .control.success i .img-success{
+     visibility: visible;
+}
+
+.input-block .control.error i .img-error{
+     visibility: visible;
+}
+
+/*--------------- end Validação -----------------------*/
+
 
 /*             Animações            */
 
